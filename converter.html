@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <!--The heading-->
+        <h1>Converter Hub</h1>
+        <p>a collection of useful conversion tools</p>
+        <!--Main Content-->
+        <div>
+            <!--navigation-->
+            <div class="nav">
+                <ul class="links">
+                    <li><a href="#file">File Transfer</a></li>
+                    <li><a href="#temp">Temparature</a></li>
+                    <li><a href="#scientific">Scientific</a></li>
+                    <li><a href="#metric">Metric</a></li>
+                </ul>
+            </div>
+            <!--file conversion-->
+            <div class="file" id="file">
+                <h3>File Transfer Time Calculator</h3>
+                <label for="">File Size</label><br>
+                <input type="number" name="file-size" id="file-size"/>
+                <select name="type-size" id="type-size">
+                    <option value="kb">Kilobytes (KB)</option>
+                    <option value="mb">Megabytes (MB)</option>
+                    <option value="gb">Gigabytes (GB)</option>
+                </select><br>
+                <label for="int-speed">Internet Speed</label><br>
+                <input type="number" name="int-speed" id="int-speed"/>
+                <select name="size-speed" id="size-speed">
+                    <option value="kb">Kilobytes/sec (Kbps)</option>
+                    <option value="mb">Megabytes/sec (Mbps)</option>
+                    <option value="gb">Gigabytes/sec (Gbps)</option>
+                </select><br>
+                <button id="file-calculate">Calculate</button>
+                <div class="file-output" id="file-output">
+                    <p>Estimated Time:</p>
+                    <p class="file-seconds">fgbateds</p>
+                </div>
+            </div>
+            <!--temparature conversion-->
+            <div class="temp" id="temp">
+                <h3>Temparature Converter</h3>
+                 <label for="temp-val">Value to Convert</label><br>
+                <input type="number" name="temp-val" id="temp-val"/>
+                <br>
+                <label>From</label><br>
+                <select name="temp-type" id="temp-type">
+                    <option value="cel">Celsius (°C)</option>
+                    <option value="far">Farenheit (°F)</option>
+                </select><br>
+                <button id="temp-calculate">Convert</button>
+                <div class="temp-output" id="temp-output">
+                    <p>Converted Value:</p>
+                    <p class="temp-val">fgbateds</p>
+                </div>
+            </div>
+            <!--Scientific notation Converter-->
+            <div class="scientific" id="scientific">
+                <h3>Scientific Notation Converter</h3>
+                <label for="sci-val">Standard Number</label><br>
+                <input type="number" name="sci-val" id="sci-val"/>
+                <br>
+                <button id="file-calculate">Convert</button>
+                <div class="scien-output" id="scien-output">
+                    <p>Scientific Notation:</p>
+                    <p class="scie-val">fgbateds</p>
+                </div>
+            </div>
+            <!--Metric Prefix Converter-->
+            <div class="metric" id="metric">
+                <h3>Metric Prefix Converter</h3>
+                <label for="sci-val" >Value</label><br>
+                <input type="number" name="sci-val" id="sci-val"/>
+                <br>
+                <label for="metric-type">From</label>
+                <label for="">To</label><br>
+                <select name="metric-type-input">
+                    <option value="giga-in">Giga (G)</option>
+                    <option value="mega-in">Mega (M)</option>
+                    <option value="kilo-in">Kilo (k)</option>
+                    <option value="base-unit-in">Base Unit</option>
+                    <option value="milli-in">milli (m)</option>
+                    <option value="micro-in">micro (µ)</option>
+                </select>
+                <select name="metric-type-output">
+                    <option value="giga-out">Giga (G)</option>
+                    <option value="mega-out">Mega (M)</option>
+                    <option value="kilo-out">Kilo (k)</option>
+                    <option value="base-unit-out">Base Unit</option>
+                    <option value="milli-out">milli (m)</option>
+                    <option value="micro-out">micro (µ)</option>
+                </select><br>
+                <button id="metric-calculate">Convert</button>
+                <div class="scien-output" id="scien-output">
+                    <p>Converted Value:</p>
+                    <p class="metric-val">fgbateds</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
